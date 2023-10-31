@@ -1,0 +1,78 @@
+body {
+    background-image: url("sidaett.png");
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    justify-content: center; /* Centrera flexboxarna horisontellt */
+    align-items: center; /* Centrera flexboxarna vertikalt */
+    height: 100vh;
+   
+}
+
+body {
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Karla:wght@200&display=swap');
+}
+
+/*JAVASCRIPT MENY*/
+ul {
+    background-image: url("");
+    background-repeat: no-repeat; 
+    font-size: 25px;
+    flex: 1;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+
+
+#Meny {
+    list-style: none; /* Ta bort punktmarkeringen från listan */
+}
+
+#Meny li {
+    padding: 30px 120px;
+}
+
+#Meny li a {
+    text-decoration: none; /* Ta bort understreck */
+    color: #000000; /* Ändra textfärg till vit */
+    font-family: karla;
+}
+
+
+h1 {
+    font-family: abril fatface;
+    font-size: 100px;
+    color: hwb(60 78% 15%);
+    text-align: center;
+}
+
+
+.blimedlem-container {
+    display: flex;
+    justify-content: center; /* Centrera horisontellt */
+    align-items: center; /* Centrera vertikalt */
+    height: 50vh; /* Justera höjden efter dina behov */
+}
+
+.blimedlem {
+    flex-grow: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #000000;
+    font-family: karla;
+    font-style: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(247, 237, 40, 0.845);
+    display: inline-block;
+}
+
+
+.footer{
+    background-color: rgb(17, 82, 77);
+    padding: 40px;
+}
