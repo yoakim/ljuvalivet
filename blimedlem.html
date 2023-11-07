@@ -20,21 +20,106 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Karla:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Karla:wght@200&family=Mohave:wght@300&display=swap" rel="stylesheet">
     <title>Bli medlem</title>
 </head>
 <body>
+    <div class="container">
+        <a href="index.html" class="logga"></a></div>
+        <div class="meny"><ul id="Meny">
+        </ul><li><input class="sokruta" type="text" id="searchBox" placeholder="Sök..."></li>
+        <li><button class="sokrutaknapp" onclick="performSearch()">Sök</button></li></div>
+    </div>
+
+
+
+    <div class="content-container">
+    <h1 class="h1blimedlem">Bli medlem och börja dejta!</h1>
+    <div class="ptext">
+        <p> Söker du den perfekta matchen? Då har du kommit till rätt ställe! Välkommen till Ljuva livet - 
+            platsen där kärlekshistorier börjar och drömmar blir verklighet.
+             Vi har skapat den ultimata plattformen för att hjälpa dig att hitta din själsfrände och bygga
+              meningsfulla relationer. Registera dig och
+             hitta kärleken redan idag!
     
+        </p></div>
+      </div>
 
+      <section class="registrera-container">
+        
+        <div class="formular"><table border="4"> 
+            
+            <h5>Bli medlem utan kostnad</h5>
 
+            <form>
+                <button type="submit">Man</button>
+                <button type="reset">Kvinna</button>
+                <button type="reset">Ickebinär</button>
+            </form><br>
 
+            <tr> 
+                <label for="age">Välj din ålder:</label>
+                <select id="age" name="age">
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                </select>
+                
+            </tr>
 
-
-
-
-    <ul id="Meny"></ul>
+            <tr>
+                <td colspan="2">
+                    <input id="namn" name="thename" type="text" placeholder="Namn">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input id="adress" name="theadress" type="text" placeholder="Adress">
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                    <input id="email" name="theemail" type="text" placeholder="E-postadress">
+                </td>
+            </tr>
+                
+            <tr>
+                <td colspan="2">
+                    <input id="password" name="thepassword" type="text" placeholder="Lösenord">
+                </td>
+            </tr>
+                
     
+                <tr>
+                    <td><label for="message">om mig</label> </td>
+                    <td><textarea id="message" name="mytext" rows="4" cols="50"></textarea></td>
+                
+                </tr>
+                <tr>
+                    <td>
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter">
+                            Jag accepterar medlemsvillkoren
+                        </label>
+                    </td>
+                </tr>
+                
+                
+                
+        
+            
 
+        </div>
+
+
+      </section>
 
 
 

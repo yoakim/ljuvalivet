@@ -17,3 +17,4 @@
     document.getElementById("Meny").innerHTML = menyHtml
 
 }
+

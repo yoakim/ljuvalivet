@@ -20,42 +20,31 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Karla:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Karla:wght@200&family=Mohave:wght@300&display=swap" rel="stylesheet">
+
     <title>Ljuva livet</title>
 </head>
 
 <body>
-    <ul id="Meny"></ul>
+
+
+    <!-- FIXA SÖKRUTAN-->
+    <div class="container">
+    <a href="index.html" class="logga"></a></div>
+    <div class="meny"><ul id="Meny">
+    </ul><li><input class="sokruta" type="text" id="searchBox" placeholder="Sök..."></li>
+    <li><button class="sokrutaknapp" onclick="performSearch()">Sök</button></li></div>
+</div>
     
-<h1> Hitta din <br> person idag!</h1>
+
+<h1 class="h1index"> Hitta din <br> person idag!</h1>
 
 <div class="blimedlem-container">
-    <a class="blimedlem" href="#">Bli medlem</a>
+    <a class="blimedlem" href="Blimedlem.html">Bli medlem</a>
 </div>
 
-<!-- 
-    <nav class="flexbox"> 
-        <div class="left">Bestämd bredd</div>
-        <div class="resten1">En andel</div>
-        <div class="logga"></div>
-        <div class="menyett">meny</div>
-        <div class="resten2">Två andelar</div>
-        <div class="resten1"></div> </nav>
-<div><br>
-    <form action="/sok" method="get">
-        <label for="sokruta"></label>
-        <input type="text" id="sokruta" name="query" class="custom-search-box" placeholder="Sök...">
-        <input type="submit" value="Sök">
-    </form>
-</div> -->
 
 
-
-
-
-<footer class="footer">
-    <section class="resten1">Footer</section>
-</footer>
 
 
 <script src="script/script.js"></script>

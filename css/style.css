@@ -1,10 +1,18 @@
+
+/*
+*{
+    border: solid 1px red;
+}*/
+
+
 body {
-    background-image: url("sidaett.png");
+    background-image: url("bakgrundsbildett.png");
     background-size: 100%; 
     background-repeat: no-repeat; 
     justify-content: center; /* Centrera flexboxarna horisontellt */
     align-items: center; /* Centrera flexboxarna vertikalt */
     height: 100vh;
+    background-color: #ffffff;
    
 }
 
@@ -12,57 +20,104 @@ body {
   @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Karla:wght@200&display=swap');
 }
 
+
+
+
 /*JAVASCRIPT MENY*/
-ul {
-    background-image: url("");
-    background-repeat: no-repeat; 
-    font-size: 25px;
-    flex: 1;
-    padding: 0px;
-    text-align: center;
+.container {
     display: flex;
+    align-items: flex-start;
+
+  }
+  
+  .logga {
+    background-image: url('logga.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 140px;
+    height: 100px;
+    padding-top: 10px;
+    margin-left: 20px;
+    display: block;
+  }
+
+.meny {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     flex-direction: row;
-    text-decoration: none;
+    margin-top: -100px;
 }
-
-
 
 #Meny {
     list-style: none; /* Ta bort punktmarkeringen från listan */
+    display: flex;
+    flex-direction: row;
 }
 
 #Meny li {
-    padding: 30px 120px;
+    padding: 0 20px;
 }
 
 #Meny li a {
     text-decoration: none; /* Ta bort understreck */
-    color: #000000; /* Ändra textfärg till vit */
-    font-family: karla;
+    color: hsl(175, 66%, 19%);
+    font-family: mohave;
+    font-size: 20px;
+    
+   
+}
+.sokruta{
+    font-family: mohave;
+    font-size: 17px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 5px;
 }
 
+.sokrutaknapp {
+    font-family: mohave;
+    font-size: 18px;
+    background-color: hsl(175, 66%, 19%);
+    border: none;
+    border-radius: 20px;
+}
+li {
+    list-style: none; /* Ta bort punktmarkeringen från listelementen */
+  }
 
-h1 {
-    font-family: abril fatface;
-    font-size: 100px;
-    color: hwb(60 78% 15%);
+
+h4 {
+    font-family: mohave;
+    font-size: 30px;
+    color: hsl(175, 66%, 19%);
     text-align: center;
 }
 
+.h1index{
+    font-family: abril fatface;
+    font-size: 85px;
+    color:hsl(175, 66%, 19%);
+    text-align: center;
+    
+}
 
+/*Bli medlem-knapp*/
 .blimedlem-container {
     display: flex;
     justify-content: center; /* Centrera horisontellt */
     align-items: center; /* Centrera vertikalt */
-    height: 50vh; /* Justera höjden efter dina behov */
 }
+
 
 .blimedlem {
     flex-grow: 0;
     text-decoration: none;
     list-style: none;
-    color: #000000;
-    font-family: karla;
+    color: (175, 66%, 19%);
+    font-family: mohave;
     font-style: bold;
     font-size: 20px;
     padding: 10px;
@@ -71,8 +126,86 @@ h1 {
     display: inline-block;
 }
 
+.resten{
+    display: flex;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100px; 
+}
 
 .footer{
     background-color: rgb(17, 82, 77);
+    flex-grow: 0;
     padding: 40px;
+    margin: 0;
+    width: 1000px;
+    position: absolutes;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+.sidaett {
+    font-family: mohave;
+    font-size: 30px;
+    color: hwb(60 78% 15%);
+    text-align: center;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Två rader bilder */
+    gap: 10px; /* Avstånd mellan bilderna */
+    flex-direction: row;
+    justify-content: center; /* Centrera bilderna horisontellt */
+    max-width: 700px;
+    margin: 0 auto;
+    
+}
+
+.gallery img {
+    max-width: 60%; /* Anpassa bilderna till galleriets bredd */
+    height: auto;
+    max-height: 150px; /* Justera bildernas höjd efter dina behov */
+}
+
+
+/*Bli medlem underida*/
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.h1blimedlem {
+    font-family: abril fatface;
+    font-size: 50px;
+    color: hsl(175, 66%, 19%);
+}
+
+.ptext {
+    font-family: mohave;
+    color: hsl(175, 66%, 19%);
+    font-size: 20px;
+    max-width: 800px;
+}
+
+/*Formulär bli medlem*/
+.registrera-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.formular{
+    background-color: white;
+    font-family: mohave;
+    font-size: 20px;
 }
