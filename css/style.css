@@ -1,9 +1,11 @@
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Karla:wght@200&display=swap');
+  }
 
 /*
 *{
     border: solid 1px red;
-}*/
-
+}*/ 
 
 body {
     background-image: url("bakgrundsbildett.png");
@@ -16,9 +18,7 @@ body {
    
 }
 
-body {
-  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Karla:wght@200&display=swap');
-}
+
 
 
 
@@ -48,7 +48,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     flex-direction: row;
-    margin-top: -100px;
+    margin-top: -70px;
 }
 
 #Meny {
@@ -57,8 +57,9 @@ body {
     flex-direction: row;
 }
 
+/*MELLANRUM MELLAN MENYKNAPPAR*/
 #Meny li {
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 #Meny li a {
@@ -66,9 +67,29 @@ body {
     color: hsl(175, 66%, 19%);
     font-family: mohave;
     font-size: 20px;
-    
-   
 }
+
+/*ÄNDRA KNAPPAR I MENYN*/
+#Meny li a[href="loggain.html"]{
+    background-color: rgb(16, 80, 75);
+    color: #ffffff;
+    font-size: 20px;
+    font-family: mohave;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+#Meny li a[href="blimedlem.html"] {
+    background-color: rgb(16, 80, 75);
+    color: #ffffff;
+    font-size: 20px;
+    font-family: mohave;
+    border-radius: 10px;
+    padding: 2px 10px; 
+}
+
+
+
 .sokruta{
     font-family: mohave;
     font-size: 17px;
@@ -79,11 +100,13 @@ body {
 
 .sokrutaknapp {
     font-family: mohave;
-    font-size: 18px;
-    background-color: hsl(175, 66%, 19%);
-    border: none;
-    border-radius: 20px;
+    font-size: 14px;
+    border: 1px;
+    border-radius: 10px;
+    margin-right: 20px;
 }
+
+
 li {
     list-style: none; /* Ta bort punktmarkeringen från listelementen */
   }
@@ -175,12 +198,13 @@ h4 {
 }
 
 
-/*Bli medlem underida*/
+/*Bli medlem undersida*/
 .content-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    height: 40vh;
 }
 
 .h1blimedlem {
@@ -194,18 +218,107 @@ h4 {
     color: hsl(175, 66%, 19%);
     font-size: 20px;
     max-width: 800px;
+    margin: 0;
+   
 }
 
 /*Formulär bli medlem*/
-.registrera-container{
+.registrera-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-family: mohave;
+    margin-top: 50px;
 }
 
-.formular{
+.formular {
     background-color: white;
     font-family: mohave;
+    font-size: 25px;
+    border-radius: 20px;
+    width: 450px; 
+    height: 800px; 
+    color: rgb(16, 80, 75);
+
+}
+
+
+.formular table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+/*padding mellanrum mellan raderna*/
+.formular table, .formular td, .formular th {
+    border: none;
+    padding: 15px;
+}
+
+.formular th {
+    text-align: left;
+}
+
+.knappblimedlem {
+    background-color: rgb(16, 80, 75);
+    color: #ffffff;
+    padding: 15px 100px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+.age {
+    margin: 20px 0 15px 0; 
+}
+
+
+.gender {
+    background-color: #ffffff;
+    color: rgb(16, 80, 75);
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-family: mohave;
+    font-size: 15px;
+    margin: 5px;
+    border: 1px solid rgb(16, 80, 75);
+}
+
+.gender:active {
+    background-color: rgb(16, 80, 75);
+    color: #ffffff;
+}
+
+/*Formulärruta*/
+.formular input[type="text"] {
     font-size: 20px;
+    font-family: mohave;
+    padding: 7px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(16, 80, 75);
+    color: rgb(16, 80, 75);
+    display: block;
+    outline: none; 
+    align-items: center;
+}
+
+
+
+/*sökknapp 2*/
+.search-list-item {
+    cursor: pointer;
+}
+
+.search-container {
+    display: inline-block;
+}
+
+.search-icon {
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
 }
